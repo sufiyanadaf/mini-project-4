@@ -1,0 +1,61 @@
+
+<div class="row" id="row">
+<div class="col-10">
+ <h1>Person Detail Information</h1>
+</div>
+</div>
+<!-- <div class="col-2">
+  <button mat-button (click)="openDialog()" class="btn btn-success">Open dialog</button>
+</div> -->
+<div class="row">
+  <div class="col-8" style="margin-left: 100px; margin-top: 20px;">
+    <label style="font-weight:600;">Search :</label>
+    <input type="search" style="width:400px;" [(ngModel)]="searchText">
+  </div>
+</div>
+<div class="row">
+  <div id="box" class="col-7">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First_Name</th>
+            <th scope="col">Last_Name</th>
+            <!-- <th scope="col">Date Of Birth</th> -->
+            <th scope="col">Gender</th>
+            <!-- <th scope="col">Status</th> -->
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let i = index,let item of Array | filter:searchText">
+            <td>{{i+1}}</td>
+            <td>{{item.fields['First Name']}}</td>
+            <td>{{item.fields['Last Name']}}</td>
+            <!-- <td>{{item.fields['Date of Birth']}}</td> -->
+            <td>{{item.fields.Gender}}</td>
+            <!-- <td>{{item.fields.Status}}</td> -->
+            <td>
+                <button class="btn btn-primary" (click)="view(i)">View</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+<div class="col-5">
+  <h1>Person Detail</h1>
+ <div style="margin-top: 30px; margin-left:10px; padding: 5px;">
+  <!-- <h1>{{a}}</h1> -->
+  <h1 *ngFor="let item of a">
+    <h2>{{item.fields.Gender}}</h2>
+    <h2>{{item.fields['First Name']}}</h2>
+    <h2>{{item.fields['Last Name']}}</h2>
+    <h2>{{item.fields['Date of Birth']}}</h2>
+    <h2>{{item.fields.Status}}</h2>
+  </h1>
+  
+ </div>
+</div>
+</div>
+
+<router-outlet></router-outlet>
+

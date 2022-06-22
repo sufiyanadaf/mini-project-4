@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>Favorite Animal</h1>
+<div>
+    <form [formGroup]="myForm">
+        <label>First_Name :</label>
+        <br>
+        <input type="text" formControlName="firstname">
+        <br><br>
+        <label>Last_Name :</label>
+        <br>
+        <input type="text" formControlName="lastname">
+        <br><br>
+        <label>Id :</label>
+        <br>
+        <input type="text" formControlName="id">
+        <br><br>
+        <label>isActive :</label>
+        <select formControlName="isActive" name="isActive">
+            <option>Active</option>
+            <option>Suspended</option>
+        </select>
+        <br><br>
+        <button class="btn btn-success">Submit</button>&nbsp;&nbsp;&nbsp;
+        <button class="btn btn-danger" type="reset">Clear</button>
+    </form>
+</div>
