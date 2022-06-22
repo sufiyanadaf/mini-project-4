@@ -1,0 +1,41 @@
+{
+  "user":[
+    {
+      "firstname":"Sufiya",
+      "lastname":"Nadaf",
+      "id":1,
+      "isActive":"Active"
+    },
+    {
+      "firstname":"Kavya",
+      "lastname":"Gouda",
+      "id":2,
+      "isActive":"suspended"
+    },
+    {
+      "firstname":"Sandhya",
+      "lastname":"Kher",
+      "id":3,
+      "isActive":"Active"
+    },
+    {
+      "firstname":"Aishwarya",
+      "lastname":"Nayak",
+      "id":4,
+      "isActive":"suspended"
+    },
+    {
+      "firstname":"Bhagya",
+      "lastname":"Bhosle",
+      "id":5,
+      "isActive":"Active"
+    },
+    {
+      "firstname":"Chetana",
+      "lastname":"Gayakwad",
+      "id":6,
+      "isActive":"Active"
+    }
+  ]
+  
+}
